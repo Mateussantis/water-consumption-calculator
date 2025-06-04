@@ -5,13 +5,8 @@ using Api.Src.UseCases.CalculateConsumption.Interfaces;
 namespace Api.Src.UseCases.CalculateConsumption {
   [ApiController]
   [Route("consumption")]
-  public class CalculateConsumptionController : ControllerBase{
-    private readonly ICalculateConsumption _calculateUseCase;
-
-    public CalculateConsumptionController(ICalculateConsumption calculationService)
-    {
-      _calculateUseCase = calculationService;
-    }
+  public class CalculateConsumptionController(ICalculateConsumption calculationUseCase) : ControllerBase{
+    private readonly ICalculateConsumption _calculateUseCase = calculationUseCase;
 
     [HttpPost("calculate")]
     public ActionResult<ConsumptionResponse> Calculate([FromBody] ConsumptionRequest request) {

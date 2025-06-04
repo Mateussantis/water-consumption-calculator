@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0MnTjuV4J3U=",
+  "dgSpecHash": "7TUgO1kQaWA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mateu\\Desktop\\Consumo_Agua\\water-consumption-calculator\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\mateu\\Desktop\\water-consumption-calculator\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
