@@ -28,5 +28,5 @@ Ext.define('App.view.calculator.CalculatorController', {
               Ext.Msg.alert('Erro', 'Falha na requisição.');
             }
         });
-    }
+    },
 });
