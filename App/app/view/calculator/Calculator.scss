@@ -5,6 +5,7 @@
     margin-right: auto;
     margin-left: auto;
     font-weight: bold;
+    color: #1E294D;
   }
 
   .x-tool {
@@ -17,25 +18,38 @@
 
 .div-container {
   margin: auto;
-  width: 75%;
+  width: 60%;
+}
+
+.x-form-trigger-wrap-default {
+  border-style: none;
 }
 
 .input-form {
-  padding: 5px;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  color: rgba(3, 102, 214, 0.3);
+  border: 1px solid #CDD9ED;
+  // background: #F9F9F9;
+  transition: border .3s ease;
   .x-form-spinner {
     display: none !important;
   }
   .x-form-text {
     font-size: 16px;
-    background-color: #f9f9f9;
   }
 }
 
 .button-form {
-  background-color: #20A2D9;
+  background-color: #c7dcf6;
+  border: 0px solid;
   border-radius: 20px;
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .button-form:hover {
@@ -51,25 +65,36 @@
     justify-content: center; // ou center ou flex-start
     margin-top: 10px;
   }
-
+  
   .tier-card {
+    box-sizing: border-box;
+    flex: 0 1 calc(33.333% - 10px); // 3 por linha com gap
+    max-width: calc(33.333% - 20px);
     width: 130px;
     min-height: 120px;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 10px;
     background-color: #fafafa;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: #3459c1 0px 0px 0px 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .tier-card:nth-child(4) {
+    flex: 1 1 calc(100% - 30px); /* 2 gaps de 15px entre 3 cards */
+    max-width: calc(100% - 30px);
+    width: calc(100% - 30px);
+    min-height: 120px;
+  }
+
   .description {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 8px;
+    color: #1e294d;
   }
 
   .quantity,
@@ -85,9 +110,8 @@
   }
 
   .total-div {
-    // margin-top: 20px;
     margin-top: 30px;
-    border-top: 2px solid #333;
+    border-top: 2px solid  rgba(3, 102, 214, 0.3);
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -98,5 +122,6 @@
 
   .total {
     margin: 0;
+    color:  #1e294d
   }
 }

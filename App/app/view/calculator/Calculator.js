@@ -12,13 +12,12 @@ Ext.define('App.view.calculator.Calculator', {
     
     header: {
         style: {
-            backgroundColor: '#1B72A4',
-            color: '#FFFFFF',
+            backgroundColor: '#dfebfa',
             paddingTop: "25px",
             paddingBottom: "25px",
             textAlign: 'center'
         },
-        titleAlign: 'center',
+        // titleAlign: 'center',
     },
 
     items: [
@@ -39,23 +38,29 @@ Ext.define('App.view.calculator.Calculator', {
                     pack: 'start',
                 },
                 defaults: {
-                    margin: '15 10'
+                    margin: '30 10'
                 },
                 items: [
                     {
                         xtype: 'numberfield',
                         cls: 'input-form',
                         bind: '{cubicMeters}',
-                        minValue: 0,
+                        hideTrigger: true, 
                         allowDecimals: false,
                         allowBlank: false,
+                        minValue: 0,
                         flex: 1
                     },
                     {
                         xtype: 'button',
                         text: 'Calcular',
                         handler: 'onCalculateClick',
-                        cls: 'button-form'
+                        cls: 'button-form',
+                        listeners: {
+                        afterrender: function (btn) {
+                            btn.setText('<span style="font-weight: 600; color: #1e294d;">Calcular</span>');
+                        }
+                    }
                     }
                 ]
             },
