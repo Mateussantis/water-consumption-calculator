@@ -128,19 +128,25 @@
 
 @media (max-width: 767px) {
   .result-panel {
-      max-height: 100vh;
-      overflow-y: auto;
-    .tier-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .tier-card {
-      flex: 1 1 100%;
-      max-width: 100%;
-      width: 90%;
-    }
-    .tier-card:nth-child(4) {
-      width: 90%;
-    }
+  .tier-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tier-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 80%;
+    padding: 10px;
+    min-height: 70%;
+  }
+  .tier-card:nth-child(4) {
+    max-width: 100%;
+    width: 80%;
+    min-height: 70%;
+  }
+  }
+
+  .div-container {
+    width: 80%;
   }
 }

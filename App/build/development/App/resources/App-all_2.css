@@ -12987,24 +12987,27 @@ div.x-border-layout-ct {
 }
 /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:129 */
 @media (max-width: 767px) {
-    /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:130 */
-    .result-panel {
-        max-height: 100vh;
-        overflow-y: auto;
-    }
-    /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:133 */
+    /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:131 */
     .result-panel .tier-container {
         flex-direction: column;
         align-items: center;
     }
-    /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:137 */
+    /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:135 */
     .result-panel .tier-card {
         flex: 1 1 100%;
         max-width: 100%;
-        width: 90%;
+        width: 80%;
+        padding: 10px;
+        min-height: 70%;
     }
     /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:142 */
     .result-panel .tier-card:nth-child(4) {
-        width: 90%;
+        max-width: 100%;
+        width: 80%;
+        min-height: 70%;
+    }
+    /* C:/Users/mateu/Desktop/water-consumption-calculator/App/app/view/calculator/Calculator.scss:149 */
+    .div-container {
+        width: 80%;
     }
 }

@@ -67,6 +67,7 @@ Ext.define('App.view.calculator.Calculator', {
             {
                 xtype: 'panel',
                 itemId: 'resultPanel',
+                flex: 1,
                 tpl: [
                     '<div class="tier-container">',
                     '<tpl for="tiers">',
