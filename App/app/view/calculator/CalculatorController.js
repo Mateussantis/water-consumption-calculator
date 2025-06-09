@@ -14,7 +14,6 @@ Ext.define('App.view.calculator.CalculatorController', {
 
         Ext.Ajax.request({
             url: App.Config.API_URL + '/consumption/calculate',
-            // url: 'http://localhost:5165/consumption/calculate',
             method: 'POST',
             jsonData: { cubicMeters },
             success: function (response) {

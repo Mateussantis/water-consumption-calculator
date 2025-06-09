@@ -24,13 +24,19 @@ A aplicação permite ao usuário informar o consumo de água em metros cúbicos
 - ASP.NET Core 2.3.0
 - .NET 9.0
 - Visual Studio
-
+- **Railway** (deploy da API)
 
 ### Frontend
 
 - JavaScript
 - Ext JS
 - Sencha CMD
+- **Vercel** (deploy do frontend)
+
+## 🌐 Aplicação Online
+
+Você pode acessar a aplicação em produção aqui:  
+🔗 [https://water-consumption-calculator.vercel.app/](https://water-consumption-calculator.vercel.app/)
 
 ## 📁 Estrutura do Repositório
 
@@ -45,7 +51,8 @@ A aplicação permite ao usuário informar o consumo de água em metros cúbicos
 - As faixas de cobrança estão definidas diretamente no backend, conforme permitido nas instruções do desafio;
 - O projeto segue boas práticas de código limpo e organização;
 - A entrega está separada por camadas, com frontend e backend desacoplados;
-- A aplicação respeita os critérios exigidos: lógica correta, separação de responsabilidades, interface funcional e uso adequado de Git.
+- A aplicação respeita os critérios exigidos: lógica correta, separação de responsabilidades, interface funcional e uso adequado de Git;
+- O deploy da **API foi realizado via Railway** e o deploy do **Frontend via Vercel**, com variáveis de ambiente configuradas.
 
 ## 📌 Exemplo de Cálculo
 

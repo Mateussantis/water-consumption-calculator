@@ -24,7 +24,6 @@
 
 ```bash
 cd App
-
 npm install
 sencha app watch
 ```

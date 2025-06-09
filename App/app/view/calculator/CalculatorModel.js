@@ -3,6 +3,6 @@ Ext.define('App.view.calculator.CalculatorModel', {
     alias: 'viewmodel.calculator',
 
     data: {
-      cubicMeters: 35
+      cubicMeters: 1
     }
 });
